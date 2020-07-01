@@ -25,7 +25,17 @@ The coins can form the following rows:
 ¤ ¤ ¤
 ¤ ¤
 
-Because the 4th row is incomplete, we return 3.*/
+Because the 4th row is incomplete, we return 3.
+
+Solution:
+
+Actually, this is the math problem.
+The sum of length of each row of staircase shape is n(n + 1) / 2. So this question is to solve the inequality x² + x - 2n <= 0.
+Use the formula : x = (-b +/- sqrt(b² - 4ac)) / 2a
+The final answer will be x = sqrt(2*n + 0.25) - 0.5 becuase the answer will be positive.
+We will cast the answer to int, therefore it satisfies the inequality.
+
+*/
 
 class Solution {
 public:
